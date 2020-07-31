@@ -17,6 +17,16 @@ body {
     background-color: white;
 }
 
+main {
+    display: flex;
+    height: 100vh;
+}
+
+.slide {
+    display: flex;
+    margin: auto;
+}
+
 .second_slide {
     display: none;
 }
