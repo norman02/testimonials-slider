@@ -12,3 +12,11 @@
     z-index: 0;
     box-sizing: border-box;
 } 
+
+body {
+    background-color: white;
+}
+
+.second_slide {
+    display: none;
+}
