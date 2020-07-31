@@ -36,10 +36,22 @@ main {
 }
 
 .right_col {
+    z-index: 1;
+    background-color: transparent;
     display: flex;
     flex-basis: 44%;
     flex-direction: column;
     justify-content: center;
+    margin-right: -65px;
+}
+
+.quote {
+    margin-left: 260px;
+    margin-bottom: -45px;
+}
+
+blockquote,
+cite {
     margin-left: 165px;
 }
 
@@ -49,6 +61,15 @@ cite {
     font-size: 20px;
     line-height: 1.9;
     color: var(--GrayishBlue);
+}
+
+.curve {
+    margin-top: 90px;
+}
+
+.left_col {
+    display: flex;
+    flex-direction: column;
 }
 
 em {
