@@ -35,25 +35,25 @@ main {
     margin: auto;
 }
 
-.right_col {
+.left_col {
     z-index: 1;
     background-color: transparent;
+    background: url('../images/pattern-curve.svg') no-repeat bottom;
     display: flex;
-    flex-basis: 44%;
     flex-direction: column;
     justify-content: center;
-    margin-right: -65px;
+    margin-right: -150px;
 }
 
 .quote {
-    margin-left: 260px;
+    margin-left: 95px ;
     margin-bottom: -45px;
 }
 
-blockquote,
-cite {
-    margin-left: 165px;
+blockquote {
+    width: 635px;
 }
+
 
 cite {
     margin-top: 55px;
@@ -63,21 +63,49 @@ cite {
     color: var(--GrayishBlue);
 }
 
-.curve {
-    margin-top: 90px;
-}
-
-.left_col {
-    display: flex;
-    flex-direction: column;
-}
-
 em {
     font-weight: 700;
     color: var(--DarkBlue);
 }
 
 
+.right_col {
+    display: flex;
+    flex-direction: column;
+    background: url('../images/pattern-bg.svg') no-repeat center;
+    justify-content: center;
+    align-items: center;
+    width: 694px;
+    height: 1040px;
+}
+
+.portrait {
+    border-radius: 5px;
+    box-shadow: 0 15px 20px -10px hsla(240, 51.7%, 29.2%, 0.1);
+}
+
+.button-container {
+    background-color: white;
+    height: 56px;
+    width: 112px;
+    border-radius: 28px;
+    box-shadow: 0 15px 20px -10px hsla(240, 51.7%, 29.2%, 0.1);
+    margin-top: -35px;
+    margin-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background-color: transparent;
+    margin: 15px;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
 
 .second_slide {
     display: none;
