@@ -6,7 +6,7 @@
 }
 
 *, *::before, *::after {
-    margin: 0;
+    margin: auto;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -28,6 +28,38 @@ body {
     align-content: center;
 }
 
-main {
-    margin: auto;
+
+.quote-section {
+    /* border: 1px solid blue; */
+    flex-basis: 44.1%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 1.375;
+    color: var(--DarkBlue);
+}
+
+.quotes {
+    margin-left: 95px;
+    margin-bottom: -45px;
+}
+
+cite {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.9;
+    color: var(--GrayishBlue);
+    margin-top: 32px;
+}
+
+em {
+    font-weight: 700;
+    color: var(--DarkBlue);
+}
+
+
+.portrait-section {
+    /* border: 1px solid red; */
+    flex-basis: 48.2%;
+
 }
