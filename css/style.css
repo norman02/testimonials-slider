@@ -22,6 +22,10 @@ body {
     background: url('../images/pattern-curve.svg') no-repeat bottom left;
 }
 
+main {
+    max-width: 1440px;
+}
+
 .flex {
     display: flex;
     align-items: center;
@@ -32,7 +36,7 @@ body {
 .quote-section {
     z-index: 1;
     margin: auto;
-    margin-right: -400px;
+    margin-right: -270px;
     flex-basis: 44.1%;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
