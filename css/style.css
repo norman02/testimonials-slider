@@ -97,3 +97,66 @@ button {
 button:hover {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 1000px) {
+
+body {
+    height: auto;
+}
+
+main {
+    flex-direction: column-reverse;
+    max-width: 95vw;
+}
+
+.quote-section {
+    margin: auto;
+    height: 50vh;
+    margin-top: 37px;
+    flex-basis: auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.333;
+
+}
+
+.quotes {
+    margin: auto;
+    margin-bottom: -26px;
+    width: 50px;
+}
+
+cite {
+    font-size: 15px;
+    line-height: 1.33;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+
+
+.portrait-section {
+    width: 80vw;
+    height: 50vh;
+    margin: auto;
+    margin-top: 50px;
+    flex-basis: auto;
+    background: url('../images/pattern-bg.svg') no-repeat center;
+    background-size: contain;
+    
+}
+
+
+.portrait {
+    max-width: 60vw;
+}
+
+.button-container {
+    width: 80px;
+    height: 40px;
+    margin: -25px auto 0 auto;
+}
+
+
+}
