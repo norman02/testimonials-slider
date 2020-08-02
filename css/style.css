@@ -30,8 +30,9 @@ body {
 
 
 .quote-section {
-    /* border: 1px solid blue; */
+    z-index: 1;
     margin: auto;
+    margin-right: -400px;
     flex-basis: 44.1%;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -60,7 +61,6 @@ em {
 
 
 .portrait-section {
-    /* border: 1px solid red; */
     margin: auto;
     flex-basis: 48.2%;
     height: 1040px;
