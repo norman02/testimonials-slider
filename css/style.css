@@ -6,7 +6,7 @@
 }
 
 *, *::before, *::after {
-    margin: auto;
+    margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
@@ -25,12 +25,13 @@ body {
 .flex {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
 }
 
 
 .quote-section {
     /* border: 1px solid blue; */
+    margin: auto;
     flex-basis: 44.1%;
     font-family: 'Inter', sans-serif;
     font-weight: 300;
@@ -60,6 +61,33 @@ em {
 
 .portrait-section {
     /* border: 1px solid red; */
+    margin: auto;
     flex-basis: 48.2%;
+    height: 1040px;
+    flex-direction: column;
+    background: url('../images/pattern-bg.svg') no-repeat center;
+}
 
+.shadow {
+    box-shadow: 0 15px 20px -10px hsla(240, 51.7%, 29.2%, 0.1);
+}
+
+.portrait {
+    border-radius: 5px;
+}
+
+.button-container {
+    background-color: white;
+    width: 112px;
+    height: 56px;
+    border-radius: 28px;
+    justify-content: space-evenly;
+}
+
+button {
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
 }
