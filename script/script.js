@@ -42,15 +42,14 @@ const nextSlide = () => {
 }
 
 const switchSlide = () => {
-    const inName = document.getElementById("name")
-    const inTitle = document.getElementById('title')
-
-    console.log('hello')
-    console.log(inName)
-    console.log(inTitle)
+    document.getElementById("name").innerHTML = targetSlide.name
+    document.getElementById('title').innerHTML = targetSlide.title
+    document.getElementById('quote').innerHTML = targetSlide.quote
+    console.log(document.getElementById('image').src)
+   
 }
 
-switchSlide()
+nextSlide()
 
 // document.getElementById('prev').addEventListener('click').prevSlide
 
