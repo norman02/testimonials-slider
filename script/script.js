@@ -1,5 +1,5 @@
 
-    // create an array of slide objects 
+// create an array of slide objects 
 const slides = [
     {
         name: 'Tanya Sinclair',
@@ -15,4 +15,42 @@ const slides = [
     },
 ]
 
-console.log(slides[1].quote)
+let slideNumber = 0;
+
+let targetSlide = slides[slideNumber]
+
+// rewind to previous slide
+
+const prevSlide = () => {
+
+    if (slideNumber != 0) {
+        targetSlide = slides[slideNumber - 1]
+        switchSlide()
+        slideNumber--;
+    }
+
+}
+
+// advance to next slide
+
+const nextSlide = () => {
+    if(slideNumber != slides.length - 1) {
+        targetSlide = slides[slideNumber + 1];
+        switchSlide()
+        slideNumber++
+    }
+}
+
+const switchSlide = () => {
+    const inName = document.getElementById("name")
+    const inTitle = document.getElementById('title')
+
+    console.log('hello')
+    console.log(inName)
+    console.log(inTitle)
+}
+
+switchSlide()
+
+// document.getElementById('prev').addEventListener('click').prevSlide
+
