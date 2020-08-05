@@ -27,7 +27,7 @@ const prevSlide = () => {
         targetSlide = slides[slideNumber - 1]
         switchSlide()
         slideNumber--;
-    }
+    } 
 
 }
 
@@ -38,7 +38,7 @@ const nextSlide = () => {
         targetSlide = slides[slideNumber + 1];
         switchSlide()
         slideNumber++
-    }
+    } 
 }
 
 const switchSlide = () => {
