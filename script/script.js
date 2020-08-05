@@ -5,13 +5,13 @@ const slides = [
         name: 'Tanya Sinclair',
         title: 'UX Engineer',
         quote: "\“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this course enough. I’m now in the job of my dreams and so excited about the future. \”",
-        imageSource: './images/image-tanya.jpg'
+        picture: './images/image-tanya.jpg',
     },
     {
         name: 'John Tarkpor',
         title: 'Junior Front-end Developer',
         quote: "\“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the instructors go into is incredible. I now feel so confident about starting up as a professional developer. \”",
-        imgageSource: './images/image-john.jpg'
+        picture: "./images/image-john.jpg"
     },
 ]
 
@@ -45,11 +45,11 @@ const switchSlide = () => {
     document.getElementById("name").innerHTML = targetSlide.name
     document.getElementById('title').innerHTML = targetSlide.title
     document.getElementById('quote').innerHTML = targetSlide.quote
-    console.log(document.getElementById('image').src)
+    document.getElementById('image').src = targetSlide.picture
    
 }
 
-nextSlide()
 
-// document.getElementById('prev').addEventListener('click').prevSlide
+document.getElementById('prev').addEventListener('click', prevSlide)
+document.getElementById('next').addEventListener('click', nextSlide)
 

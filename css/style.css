@@ -94,6 +94,12 @@ button {
     background-color: transparent;
 }
 
+button,
+button:active {
+    border: none;
+    outline: none;
+}
+
 button:hover {
     cursor: pointer;
 }
