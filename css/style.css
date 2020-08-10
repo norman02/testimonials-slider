@@ -106,14 +106,20 @@ button:hover {
 
 @media only screen and (max-width: 1000px) {
 
+
+    * {
+        max-width: 95vw;
+    }
+    main {
+        flex-direction: column-reverse;
+        max-width: 95vw;
+    }
+
 body {
     height: auto;
 }
 
-main {
-    flex-direction: column-reverse;
-    max-width: 95vw;
-}
+
 
 .quote-section {
     margin: auto;
@@ -149,12 +155,12 @@ cite {
     margin-top: 50px;
     flex-basis: auto;
     background: url('../images/pattern-bg.svg') no-repeat center;
-    background-size: contain;
-    
+    background-size: contain; 
 }
 
 
 .portrait {
+    max-height: 200px;
     max-width: 60vw;
 }
 
